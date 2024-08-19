@@ -21,7 +21,7 @@ export const getLocalKey = (key, isNullAllowed = false) => {
   export const setLocalKey = (key, data) => {
     if (key === "wf_cart_enteries") {
       const count = data.length;
-      setCartCount(count);
+
     }
     window.localStorage.setItem(key, JSON.stringify(data));
   };
